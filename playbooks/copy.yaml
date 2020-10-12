@@ -1,0 +1,9 @@
+- hosts: local
+  connection: local
+  #become_method: sudo
+  gather_facts: no
+  tasks:
+  - name: Ansible copy file to local server
+    copy:
+      src: ~/sample.txt
+      dest: ~/Ansible/
